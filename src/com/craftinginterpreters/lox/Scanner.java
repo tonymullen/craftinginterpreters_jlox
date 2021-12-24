@@ -122,10 +122,10 @@ public class Scanner {
         while (isDigit(peek())) advance();
 
         // Look for a fractional part.
-        if (peek() == '.' && isDigiit(peekNext())) {
+        if (peek() == '.' && isDigit(peekNext())) {
             // consume the "."
             advance();
-            while (issDigit(peek())) advance();
+            while (isDigit(peek())) advance();
         }
 
         addToken(NUMBER,

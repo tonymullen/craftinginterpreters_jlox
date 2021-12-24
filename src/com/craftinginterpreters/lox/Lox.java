@@ -26,7 +26,7 @@ public class Lox {
         byte[] bytes = Files.readAllBytes(Paths.get(path));
         run(new String(bytes, Charset.defaultCharset()));
 
-        // Indicate an errorr in the exit code.
+        // Indicate an error in the exit code.
         if (hadError) System.exit(65);
     }
 
