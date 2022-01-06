@@ -5,6 +5,10 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+Generates class Expr boilerplate
+ */
+
 public class GenerateAst {
     public static void main(String[] args) throws IOException {
         if (args.length != 1) {
