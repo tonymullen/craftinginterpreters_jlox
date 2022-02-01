@@ -23,7 +23,7 @@ public class Interpreter implements Expr.Visitor<Object>,
 
     @Override
     public Object visitLogicalExpr(Expr.Logical expr) {
-        Object left = evalute(expr.left);
+        Object left = evaluate(expr.left);
 
         if (expr.operator.type == TokenType.OR) {
             if (isTruthy(left)) return left;

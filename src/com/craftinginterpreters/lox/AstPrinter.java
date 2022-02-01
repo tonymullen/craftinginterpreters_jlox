@@ -33,6 +33,11 @@ class AstPrinter implements Expr.Visitor<String> {
     }
 
     @Override
+    public String visitLogicalExpr(Expr.Logical expr) {
+        return null;
+    }
+
+    @Override
     public String visitAssignExpr(Expr.Assign expr) {
         return null;
     }
