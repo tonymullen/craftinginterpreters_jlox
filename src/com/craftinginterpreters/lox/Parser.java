@@ -85,6 +85,10 @@ public class Parser {
         if (condition == null) condition = new Expr.Literal(true);
         body = new Stmt.While(condition, body);
 
+        if (initializer != null) {
+            body = new Stmt.Block(Arrays.asList(initializer, body));
+        }
+
         return body;
     }
 
